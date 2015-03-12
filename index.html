@@ -1,4 +1,276 @@
-<html>
-<head></head>
-<body>Hello World</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+   * Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+   *
+   * CSS for making a resume with pandoc. Inspired by moderncv.
+   *
+   * This CSS document is delivered to you under the CC BY-SA 3.0 License.
+   * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+   */
+  
+  /* Whole document */
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 10px 10px 10px 10px;
+  }
+  
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      color: #757575;
+      text-align:center;
+      margin-bottom:15px;
+  }
+  h1:hover {
+      background-color: #757575;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Titles of categories */
+  h2 {
+      /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+      color: #397249;
+  }
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right:1%;
+      width: 16%;
+      height: 10px;
+      /* This is called "rulecolor" in the ConTeXt stylesheet. */
+      background-color: #9CB770;
+  }
+  h2:hover {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 17%;
+      /*font-weight: bold;*/
+  }
+  dd {
+      margin-left: 17%;
+  }
+  p {
+      margin-top:0;
+      margin-bottom:7px;
+  }
+  
+  /* Blockquotes */
+  blockquote {
+      text-align: center
+  }
+  
+  /* Links */
+  a {
+      text-decoration: none;
+      color: #397249;
+  }
+  a:hover, a:active {
+      background-color: #397249;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-shadow: 1px 1px 1px #333;
+  }
+  
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+  
+  table {
+      width: 100%;
+  }
+  </style>
+</head>
+<body>
+<h1 id="igor-kaplounenko">Igor Kaplounenko</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left"><a href="https://github.com/megawidget">https://github.com/megawidget</a></td>
+<td align="right"><script type="text/javascript">
+<!--
+h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x6d;&#x65;&#x67;&#x61;&#x77;&#x69;&#100;&#x67;&#x65;&#116;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#x6d;&#x65;&#x67;&#x61;&#x77;&#x69;&#100;&#x67;&#x65;&#116;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript></td>
+</tr>
+</tbody>
+</table>
+<h2 id="special-qualifications">Special Qualifications</h2>
+<p><strong>Languages</strong></p>
+<ul>
+<li>Python</li>
+<li>C++14 with STL and boost</li>
+<li>CoffeeScript with Ender.js and JQuery frameworks</li>
+</ul>
+<p><strong>Other Technologies</strong></p>
+<ul>
+<li>elliptic curve cryptography, NaCl</li>
+<li>SQLite, MySQL</li>
+<li>Linux, FreeBSD</li>
+<li>AWS S3 and EC2</li>
+<li>Git</li>
+</ul>
+<p>I am familiar with a variety of other languages and technologies as well, but am primarily a Python and C++14 aficionado.</p>
+<h2 id="work-experience">Work Experience</h2>
+<dl>
+<dt>2012-2015</dt>
+<dd><strong>Python Developer</strong> at <strong>BitTorrent, Inc.</strong>
+</dd>
+</dl>
+<ul>
+<li>Designed and implemented a UDP distributed share server to provide an API for uTorrent clients to help seed pieces of large torrents. <code>Python</code></li>
+<li>Implemented the distributed share API on the uTorrent side, using C++</li>
+<li>As part of the uTorrent Core team, helped fix bugs in the uTorrent codebase, using C++</li>
+<li>Implemented features for the SoShare product on both client and server-side, using Python and Javascript</li>
+<li>Was one of the core contributors to the daemon component of the chat client Bleep, which functions as a SIP server with a cryptography layer, in C++11</li>
+<li>As part of an Agile team, worked on a number of features and bug fixes in Bleep on Windows, Android, OS X, and iOS</li>
+</ul>
+<dl>
+<dt>2010-2012</dt>
+<dd><strong>Senior Software Engineer</strong> at <strong>Sony Network Entertainment, Inc.</strong>
+</dd>
+</dl>
+<ul>
+<li>Implemented a simulator of a PSN video store and was responsible for extending it with prototypal functionality using Python+Tornado. This was showcased at E3.</li>
+</ul>
+<dl>
+<dt>2008-2010</dt>
+<dd><strong>Software Engineer</strong> at <strong>Skiff, LLC</strong>
+</dd>
+</dl>
+<ul>
+<li>Designed and implemented a WebKit plugin for mp3 audio playback on an embedded device using ALSA, MPG123, C, C++</li>
+<li>Ported frotz (a Z-Machine implementation) to an embedded device and implemented a WebKit plugin to interface with it, using C++</li>
+<li>Designed and developed a New York Times crossword engine using Javascript</li>
+<li>Engineered a library to dynamically insert ads into publications as they are displayed, using C++, SQLite</li>
+<li>Collaborated with other teams to integrate libraries and plugins</li>
+<li>Debugged third party Linux drivers that would cause the system to intermittently hang during boot</li>
+<li>Ported OProfile to a particular architecture and added support for hardware timers</li>
+</ul>
+<dl>
+<dt>2008</dt>
+<dd><strong>Lead Software Engineer</strong> at <strong>Genesis Interactive</strong>
+</dd>
+</dl>
+<ul>
+<li>Designed and implemented two server-side applications that poll third party APIs for information and make it accessible to the client-side app over HTTP, using Python</li>
+<li>Wrote an administrative API plugin for Openfire XMPP server that allows remote user management and administration, using Java</li>
+<li>Designed and implemented a RESTful API that interfaces a client-side application with a variety of third party services, using PHP and CodeIgniter MVC framework</li>
+<li>Designed an architecture for a client-side application, details presently under NDA</li>
+<li>Wrote a variety of server administration-related scripts using bash, Python</li>
+<li>Wrote an LDAP login module for Bugzilla, using Perl</li>
+<li>Installed, configured, and administrated sendmail, Subversion, Bugzilla, Twiki, OpenLDAP, and integrated them together</li>
+<li>Set up Nagios and wrote monitoring scripts for NRPE, using bash, Python</li>
+<li>Set up and administrated Amazon EC2 servers as well as all in-house servers, running a selection of Fedora Core 7, Gentoo, and FreeBSD</li>
+</ul>
+<dl>
+<dt>2007-2008</dt>
+<dd><strong>Software Engineer</strong> at <strong>Yahoo</strong>
+</dd>
+</dl>
+<ul>
+<li>Yahoo Messenger ** Designed and implemented an XML API to serve widget metadata to Yahoo Messenger widgets, using PHP ** Designed database schema for storing widget metadata, using MySQL</li>
+<li>Yahoo Photos ** Designed and implemented a distributed web API for the transfer of Yahoo Photos metadata to affiliates, using PHP, C++, MySQL ** Implemented the logic for the user landing page for Yahoo Photos migration using PHP ** Troubleshot a variety of problems with the pre-existing internal photos API, using C++, Oracle ** Designed and implemented monitoring solutions for Yahoo Photos migration servers, using bash, MySQL ** Designed and implemented a customer care tool for YPhotos accounts using PHP, MySQL ** Designed and implemented a landing page internationalization tool using Python ** Designed and implemented bulk account information retrieval tools using bash, C++</li>
+</ul>
+<dl>
+<dt>2006-2007</dt>
+<dd><strong>Software Engineer</strong> at <strong>AnchorFree</strong>
+</dd>
+</dl>
+<ul>
+<li>Worked as an embedded devices developer for mipsel architecture routers running a modified version of OpenWRT</li>
+<li>Designed and implemented a buffered HTML parser and editor to be used as a proxy module, using C, Javascript</li>
+<li>Designed and implemented a URL redirector to be used as a proxy module, using C</li>
+<li>Tweaked and optimized an existing proxy, using C</li>
+<li>Maintained a Subversion repository as well as a Bugzilla installation</li>
+<li>Designed and implemented a collection of device registration and monitoring tools, using C, perl, bash</li>
+<li>Ported TCL and Expect libraries to the mips/mipsel architecture</li>
+<li>Designed and developed a remote administration tool based on inverse SSH to enable administration of routers used inside LANs, using C, bash</li>
+</ul>
+<dl>
+<dt>2005-2006</dt>
+<dd><strong>Software Engineer</strong> at <strong>Coherent Inc.</strong>
+</dd>
+</dl>
+<ul>
+<li>Worked as a developer for a series of tools that were responsible for extracting data from laser test stations and putting it into the database, as well as making the data accessible via Apache/Tomcat, using Java, C++, Labview</li>
+<li>Designed and implemented data processing and analysis algorithms for the test stations using C++</li>
+<li>Designed and implemented Jython scripts to perform operations on databases using Oracle, MySQL, SQL, JDBC</li>
+<li>Constructed and used Hyperion/Brio reports</li>
+<li>Created Python scripts for data extraction from the laser testing station</li>
+<li>Set up a MySQL database</li>
+</ul>
+<dl>
+<dt>2004-2005</dt>
+<dd><strong>Software Engineer</strong> at <strong>UCSD Bioengineering</strong>
+</dd>
+</dl>
+<ul>
+<li>Worked as a developer on an application titled Continuity that modeled hearts in 3D using the finite element method, using C++, C, Python, OpenGL and Fortran</li>
+<li>Designed and implemented numerical algorithms emulating heart operation in a computer model using C, Fortran</li>
+<li>Performed memory usage optimizations for matrix computation algorithms</li>
+<li>Designed and implemented top-level control structures as well as GUI forms for Continuity, using Python and Tkinter</li>
+<li>Ported Continuity from Linux to Windows</li>
+<li>Worked on socket level communication between the client and server side of the application, using Python</li>
+<li>Migrated the codebase from CVS to Subversion and restructured the source code</li>
+</ul>
+<dl>
+<dt>2003</dt>
+<dd><strong>Software Engineer</strong> at <strong>Electric Power Research Institute</strong>
+</dd>
+</dl>
+<ul>
+<li>Worked as a developer on a climate-modeling application COSMIC written in C#, C++</li>
+<li>Designed and implemented the GUI for the program</li>
+<li>Troubleshooted and corrected the program's numerical functions</li>
+</ul>
+<dl>
+<dt>2003</dt>
+<dd><strong>Technical Writer</strong> at <strong>Coherent Inc.</strong>
+</dd>
+</dl>
+<ul>
+<li>Designed and implemented a help system for a laser testing program written in LabView</li>
+</ul>
+<h2 id="personal-projects">Personal Projects</h2>
+<ul>
+<li>Geek Dice - an Android-based command-line die roller; functional, but very rough around the edges</li>
+<li>Lorem Ipsum RL - a roguelike written in Python + Pygame featuring a hex grid and an innovative FOV algorithm; in extremely early stages of development</li>
+</ul>
+<h2 id="education">Education</h2>
+<dl>
+<dt>Major</dt>
+<dd><p>BA in Computer Science in the Math Department at UCSD</p>
+</dd>
+<dt>Minor</dt>
+<dd><p>Interdisciplinary Computing and the Arts with Music emphasis</p>
+</dd>
+</dl>
+<ul>
+<li>Over a year's worth of coursework in Digital Signal Processing and Synthesis as it applies to sound, incl. graduate level work, using Pure Data, C, C++</li>
+<li>Familiarity with computer graphics, esp. raytracing and radiosity techniques, using C++ and OpenGL</li>
+</ul>
+<p>References available upon request.</p>
+</body>
 </html>
