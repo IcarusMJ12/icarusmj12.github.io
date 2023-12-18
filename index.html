@@ -13,7 +13,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>resume</title>
+  <title>Igor Kaplounenko Resume</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -35,7 +35,7 @@
   /* Whole document */
   body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      width: 800px;
+      max-width: 800px;
       margin: auto;
       color: #ffffff;
       background: #000000;
@@ -46,14 +46,14 @@
   h1 {
       font-size: 55px;
       color: #c0c0c0;
-      text-align:center;
-      margin-bottom:15px;
+      text-align: center;
+      margin-bottom: 15px;
   }
-  h1:hover {
-      background-color: #757575;
-      color: #FFFFFF;
-      text-shadow: 1px 1px 1px #333;
-  }
+  /* h1:hover { */
+  /*     background-color: #757575; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
 
   /* Titles of categories */
   h2 {
@@ -70,25 +70,36 @@
       /* This is called "rulecolor" in the ConTeXt stylesheet. */
       background-color: #B77070;
   }
-  h2:hover {
-      background-color: #723949;
-      color: #FFCFFF;
-      text-shadow: 1px 1px 1px #333;
-  }
+  /* h2:hover { */
+  /*     background-color: #397249; */
+  /*     color: #FFFFFF; */
+  /*     text-shadow: 1px 1px 1px #333; */
+  /* } */
 
   /* Definitions */
   dt {
       float: left;
       clear: left;
       width: 17%;
-      /*font-weight: bold;*/
+      font-weight: bold;
   }
   dd {
       margin-left: 17%;
+      margin-bottom:7px;
   }
   p {
       margin-top:0;
       margin-bottom:7px;
+      font-size: 1.5em;
+
+      code {
+          font-size: 1.2em;
+          padding: 2px 4px;
+          margin: 0px 16px;
+          border-radius: 4px;
+          color: black;
+          background-color: lightgray;
+      }
   }
 
   /* Blockquotes */
@@ -115,44 +126,58 @@
 
   table {
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
   }
+
   </style>
 </head>
 <body>
+<header id="title-block-header">
+<h1 class="title">Igor Kaplounenko Resume</h1>
+</header>
 <h1 id="igor-kaplounenko">Igor Kaplounenko</h1>
 <blockquote>
 <p><strong>senior software engineer</strong></p>
 </blockquote>
 <blockquote>
-<p><strong>author of <a href="https://pypi.org/project/pytest-patch/">pytest-patch</a> and <a href="https://pypi.org/project/modulemeta/">modulemeta</a></strong></p>
+<p><code>Python</code> <code>C++</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p>Veteran backend software engineer with an emphasis on machine learning – microservices, tooling, and Cython/CPython extensions for machine learning frameworks.</p>
+</blockquote>
+<hr />
+<blockquote>
+<p><strong>author of <a href="https://pypi.org/project/pytest-patch/" target="_blank">pytest-patch</a> and <a href="https://pypi.org/project/modulemeta/" target="_blank">modulemeta</a></strong></p>
 </blockquote>
 <table>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/icarusmj12" class="uri">https://github.com/icarusmj12</a></td>
-<td style="text-align: right;"><a href="mailto:icarus.aquinas.mj12@gmail.com" class="email">icarus.aquinas.mj12@gmail.com</a></td>
+<td><a href="https://github.com/IcarusMJ12" class="uri" target="_blank">https://github.com/IcarusMJ12</a></td>
+<td><a href="mailto:icarus.aquinas.mj12@gmail.com" class="email">icarus.aquinas.mj12@gmail.com</a></td>
 </tr>
 </tbody>
 </table>
 <h2 id="special-qualifications">Special Qualifications</h2>
 <p><strong>Languages</strong></p>
 <ul>
-<li>Python with Tornado, Flask + Connexion</li>
+<li>Python with Tornado, Flask + Connexion, FastAPI</li>
 <li>C++17 with STL and Boost</li>
-<li>CoffeeScript, LiveScript with React or Vue</li>
+<li>CoffeeScript, LiveScript, JavaScript with React or Vue</li>
 </ul>
 <p><strong>Other Technologies</strong></p>
 <ul>
 <li>TensorFlow, neon, nGraph</li>
 <li>OpenAPI</li>
-<li>Docker, Kubernetes</li>
 <li>elliptic curve cryptography, NaCl</li>
 <li>SQLite, MySQL, PostgreSQL, Redis</li>
-<li>Linux, FreeBSD</li>
 <li>AWS S3, EC2, Lambda</li>
+<li>Docker, Kubernetes</li>
+<li>Linux, FreeBSD</li>
 <li>Git</li>
 </ul>
-<p>I am familiar with a variety of other languages and technologies as well, but am primarily a LiveScript, Python, and C++17 aficionado.</p>
 <h2 id="work-experience">Work Experience</h2>
 <dl>
 <dt>2020-2023</dt>
@@ -160,7 +185,8 @@
 </dd>
 </dl>
 <ul>
-<li>Maintained the web store by adding features and fixing bugs as requested by the sales and finance teams. (<em>Python</em>, <em>PostgreSQL</em>, <em>JavaScript</em>)</li>
+<li>Maintained the web store that sells machine learning computers ranging from laptops to rackmount servers. (<em>Python</em>, <em>PostgreSQL</em>, <em>JavaScript</em>)</li>
+<li>Liaised with the sale and finance teams to extend the store with new features.</li>
 <li>Refactored the codebase and extended it with tests, style checks, and type hints. (<em>Python</em>, <em>pytest</em>, <em>mypy</em>, <em>Nox</em>)</li>
 <li>Designed and implemented a customizable web-based GUI wrapper for arbitrary command line tools on behalf of <strong>South Park Studios</strong> that was used for their deepfake YouTube series. (<em>LiveScript</em>, <em>Vue</em>, <em>Pug</em>)</li>
 <li>Implemented lambda cloud monitoring. (<em>AWS Lambda</em>, <em>Python</em>)</li>
@@ -175,7 +201,8 @@
 <ul>
 <li>Designed and implemented a profiler for Intel’s proprietary machine learning chip. (<em>C++17</em>)</li>
 <li>Designed and implemented a microservice for hosting AI chip profiling data. (<em>Python</em>, <em>Flask</em>, <em>Connexion</em>)</li>
-<li>Contributed to the NGraph TensorFlow bridge, including porting to OS X, refactoring, implementation of various operations, pip packaging, and the C/C++ API. (<em>Python</em>, <em>C++11</em>)</li>
+<li>Provided mentoring for a couple of interns.</li>
+<li>Contributed to the NGraph TensorFlow bridge, including porting to OS X, refactoring, implementation of various operations, pip packaging, and the C/C++ API. (<em>Cython</em>, <em>C++11</em>)</li>
 <li>Contributed to the Machine Learning Toolkit, primarily by refactoring the CLI to automatically load <code>argparse</code> commands from modules via metaclasses. (<em>Python</em>)</li>
 <li>Designed and implemented a service and a client library for neural network hyperparameter optimization and experiment tracking, intended to interface with the like of SigOpt and MOE. (<em>Python</em>, <em>Flask</em>, <em>Connexion</em>)</li>
 <li>Contributed to the deep learning <code>neon</code> framework and associated web services for deep learning in the cloud, particularly CLI refactoring, 100% unit test code coverage, launcher consolidation for different types of jobs, and a multitude of bug fixes. (<em>Python</em>, <em>Flask</em>, <em>Kubernetes</em>)</li>
@@ -204,6 +231,7 @@
 <li>Implemented features for the SoShare product on both client and server-side. (<em>C++</em>, <em>JavaScript</em>, <em>Python</em>, <em>Tornado</em>)</li>
 <li>Was one of the core contributors to the daemon component of the chat client Bleep, which functions as a SIP server with a cryptography layer. (<em>C++11</em>, <em>NaCl</em>, <em>curve25519</em>, <em>ed25519</em>, <em>SQLite</em>)</li>
 <li>As part of an Agile team, worked on a number of features and bug fixes in Bleep on Windows, Android, OS X, and iOS.</li>
+<li>Served in a rotation as a Scrum Master.</li>
 </ul>
 <dl>
 <dt>2010-2012</dt>
@@ -219,13 +247,12 @@
 </dd>
 </dl>
 <ul>
-<li>Designed and implemented a WebKit plugin for mp3 audio playback on an embedded device. (<em>ALSA</em>, <em>MPG123</em>, <em>C</em>, <em>C++</em>)</li>
+<li>Designed and implemented a WebKit plugin for mp3 audio playback on our embedded device. (<em>ALSA</em>, <em>MPG123</em>, <em>C</em>, <em>C++</em>)</li>
 <li>Ported frotz (a Z-Machine implementation) to an embedded device and implemented a WebKit plugin to interface with it. (<em>C++</em>)</li>
 <li>Designed and developed a New York Times crossword engine. (<em>JavaScript</em>)</li>
 <li>Engineered a library to dynamically insert ads into publications as they are displayed. (<em>C++</em>, <em>SQLite</em>)</li>
-<li>Collaborated with other teams to integrate libraries and plugins.</li>
 <li>Debugged third party Linux drivers that would cause the system to intermittently hang during boot. (<em>C</em>)</li>
-<li>Ported OProfile to a particular architecture and added support for hardware timers. (<em>C</em>)</li>
+<li>Ported OProfile to our particular architecture and added support for hardware timers. (<em>C</em>)</li>
 </ul>
 <dl>
 <dt>2008</dt>
@@ -247,11 +274,6 @@
 <dd><strong>Software Engineer</strong> at <strong>Yahoo</strong>
 </dd>
 </dl>
-<p>Yahoo Messenger</p>
-<ul>
-<li>Designed and implemented an XML API to serve widget metadata to Yahoo Messenger widgets.</li>
-<li>Designed database schema for storing widget metadata. (<em>MySQL</em>)</li>
-</ul>
 <p>Yahoo Photos</p>
 <ul>
 <li>Designed and implemented a distributed web API for the transfer of Yahoo Photos metadata to affiliates. (<em>C++</em>, <em>MySQL</em>)</li>
@@ -262,108 +284,62 @@
 <li>Designed and implemented a landing page internationalization tool. (<em>Python</em>)</li>
 <li>Designed and implemented bulk account information retrieval tools. (<em>bash</em>, <em>C++</em>)</li>
 </ul>
+<p>Yahoo Messenger</p>
+<ul>
+<li>Designed and implemented an XML API to serve widget metadata to Yahoo Messenger widgets.</li>
+<li>Designed database schema for storing widget metadata. (<em>MySQL</em>)</li>
+</ul>
 <dl>
 <dt>2006-2007</dt>
 <dd><strong>Software Engineer</strong> at <strong>AnchorFree</strong>
 </dd>
 </dl>
 <ul>
-<li>Worked as an embedded devices developer for mipsel architecture routers running a modified version of OpenWRT.</li>
 <li>Designed and implemented a buffered HTML parser and editor to be used as a proxy module. (<em>C</em>, <em>JavaScript</em>)</li>
 <li>Designed and implemented a URL redirector to be used as a proxy module. (<em>C</em>)</li>
 <li>Tweaked and optimized an existing proxy. (<em>C</em>)</li>
-<li>Maintained a Subversion repository as well as a Bugzilla installation.</li>
 <li>Designed and implemented a collection of device registration and monitoring tools. (<em>C</em>, <em>perl</em>, <em>bash</em>)</li>
 <li>Ported TCL and Expect libraries to the mips/mipsel architecture.</li>
 <li>Designed and developed a remote administration tool based on inverse SSH to enable administration of routers used inside LANs. (<em>C</em>, <em>bash</em>)</li>
 </ul>
-<dl>
-<dt>2005-2006</dt>
-<dd><strong>Software Engineer</strong> at <strong>Coherent Inc.</strong>
-</dd>
-</dl>
-<ul>
-<li>Worked as a developer for a series of tools that were responsible for extracting data from laser test stations and putting it into the database, as well as making the data accessible via Apache/Tomcat.</li>
-<li>Designed and implemented data processing and analysis algorithms for the test stations (<em>C++</em>)</li>
-<li>Designed and implemented scripts to perform operations on databases. (<em>Jython</em>)</li>
-<li>Constructed and used Hyperion/Brio reports.</li>
-<li>Created scripts for data extraction from the laser testing station. (<em>Python</em>)</li>
-<li>Set up a MySQL database.</li>
-</ul>
-<dl>
-<dt>2004-2005</dt>
-<dd><strong>Software Engineer</strong> at <strong>UCSD Bioengineering</strong>
-</dd>
-</dl>
-<ul>
-<li>Worked as a developer on an application titled Continuity that modeled hearts in 3D using the finite element method. (<em>C++</em>, <em>C</em>, <em>Python</em>, <em>OpenGL</em>, <em>Fortran</em>)</li>
-<li>Designed and implemented numerical algorithms emulating heart operation in a computer model. (<em>C</em>, <em>Fortran</em>)</li>
-<li>Performed memory usage optimizations for matrix computation algorithms.</li>
-<li>Designed and implemented top-level control structures as well as GUI forms for Continuity. (<em>Python</em>, <em>TKinter</em>)</li>
-<li>Ported Continuity from Linux to Windows.</li>
-<li>Worked on socket level communication between the client and server side of the application. (<em>Python</em>)</li>
-<li>Migrated the codebase from CVS to Subversion and restructured the source code.</li>
-</ul>
-<dl>
-<dt>2003</dt>
-<dd><strong>Software Engineer</strong> at <strong>Electric Power Research Institute</strong>
-</dd>
-</dl>
-<ul>
-<li>Worked as a developer on a climate-modeling application COSMIC.</li>
-<li>Designed and implemented the GUI for the program.</li>
-<li>Troubleshooted and corrected the program’s numerical functions.</li>
-</ul>
-<dl>
-<dt>2003</dt>
-<dd><strong>Technical Writer</strong> at <strong>Coherent Inc.</strong>
-</dd>
-</dl>
-<ul>
-<li>Designed and implemented a help system for a laser testing program written in LabView.</li>
-</ul>
 <h2 id="personal-projects">Personal Projects</h2>
 <dl>
-<dt><a href="https://github.com/icarusmj12/pytest-patch">pytest-patch</a></dt>
-<dd>An automagic <code>patch</code> fixture that can monkeypatch objects directly or by name.
+<dt><a href="https://github.com/IcarusMJ12/pytest-patch" target="_blank">pytest-patch</a></dt>
+<dd>An automagic <code>patch</code> fixture that can monkeypatch objects directly or by name. (<em>Python</em>)
 </dd>
-<dt><a href="https://github.com/icarusmj12/python-module">modulemeta</a></dt>
-<dd>a <code>Module</code> metaclass to turn your classes into modules.
+<dt><a href="https://github.com/IcarusMJ12/python-module" target="_blank">modulemeta</a></dt>
+<dd>A <code>Module</code> metaclass to turn your classes into modules. (<em>Python</em>)
 </dd>
-</dl>
-<p>For committed developers, or at least those who definitely ought to be.</p>
-<dl>
-<dt><a href="https://github.com/icarusmj12/dualshock.pd">dualshock.pd</a></dt>
-<dd>A Pure Data extension that captures Sony DualShock input and translates it into human-usable form.
+<dd>For committed developers, or at least those who definitely ought to be.
 </dd>
-</dl>
-<p>Comes with a rudimentary AM/FM synthesizer, a duophonic synthesizer, a noise synthesizer, and a drumkit. Fun but not especially practical.</p>
-<dl>
-<dt><a href="https://github.com/icarusmj12/ebb">ebb</a></dt>
-<dd>the Expressly Better Bencoder! (<em>C++11</em>, <em>Boost PP</em>)
+<dt><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2984665813" target="_blank">BetterHotkeys</a></dt>
+<dd>A mod for the indie game Barotrauma, currently with over 1200 subscribers. (<em>C#</em>)
 </dd>
-</dl>
-<p>Used internally at BitTorrent, this is a heavily template-based header-only library that simplifies encoding data into a JSON-like format. Bdecoding is also supported and is functional for straightforward data structures, but needs more work to be compatible with .torrent files.</p>
-<dl>
-<dt><a href="https://github.com/icarusmj12/bevel">bevel</a></dt>
+<dt><a href="https://github.com/IcarusMJ12/ebb" target="_blank">ebb</a></dt>
+<dd>The Expressly Better Bencoder! (<em>C++11</em>, <em>Boost PP</em>)
+</dd>
+<dd>Used internally at BitTorrent, this is a heavily template-based header-only library that simplifies encoding data into a JSON-like format. Bdecoding is also supported and is functional for straightforward data structures.
+</dd>
+<dt><a href="https://github.com/IcarusMJ12/bevel" target="_blank">bevel</a></dt>
 <dd>A multitool for commandline processing of bencoded entities with grep- and sed-like functionality. (<em>Python</em>)
 </dd>
+<dd>Also used internally at BitTorrent for viewing and editing bencoded entities either manually or in a scripted environment.
+</dd>
+<dt><a href="https://github.com/IcarusMJ12/dualshock.pd" target="_blank">dualshock.pd</a></dt>
+<dd>A Pure Data extension that captures Sony DualShock controller input and translates it into human-usable form. (<em>C++</em>)
+</dd>
+<dd>Comes with a rudimentary AM/FM synthesizer, a duophonic synthesizer, a noise synthesizer, and a drumkit.
+</dd>
 </dl>
-<p>Also used internally at BitTorrent for viewing and editing bencoded entities either manually or in a scripted environment.</p>
 <h2 id="education">Education</h2>
 <dl>
 <dt>Major</dt>
-<dd>BA in Computer Science in the Math Department at UCSD
+<dd>Bachelor of Arts in Mathematics-Computer Science at the University of California San Diego
 </dd>
 <dt>Minor</dt>
 <dd>Interdisciplinary Computing and the Arts with Music emphasis
 </dd>
 </dl>
-<ul>
-<li>Completed a Cryptography I course on Coursera as offered by Stanford University.</li>
-<li>Over a year’s worth of coursework in Digital Signal Processing and Synthesis as it applies to sound, incl. graduate level work. (<em>Pure Data</em>, <em>C</em>, <em>C++</em>)</li>
-<li>Familiarity with computer graphics, esp. raytracing and radiosity techniques. (<em>C++</em>, <em>OpenGL</em>)</li>
-</ul>
 <blockquote>
 <p>references available upon request</p>
 </blockquote>
